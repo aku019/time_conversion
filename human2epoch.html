@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Time Converter</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src='./human2epoch.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h2 class="heading">Epoch To Human</h2>
+        <div class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./epoch2human.html">Epooch To Human Readable</a>
+            <a href="./human2epoch.html">Human Readable to Epooch</a>
+            <!-- <div class="dropdown">
+                <button class="dropbtn">URL Encoder/Decoder
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="./url-encoder-decoder.html">URL Encoder</a> 
+                    <a href="./urlDecoder.html">URL Decoder</a> 
+                  </div>
+            
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Base64 Encoder/Decoder
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="./base64-encode.html">Base64 Encoder</a> 
+                <a href="./base64-decode.html">Base64 Decoder</a> 
+              </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Crypto Hashing
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="./md5.html">MD5 Hash Generator</a> 
+                <a href="./sha1.html">SHA-1 Hash Generator</a> 
+                <a href="./sha256.html">SHA-256 Hash Generator</a> 
+                <a href="./sha512.html">SHA-512 Hash Generator</a> 
+
+              </div>
+            </div> -->
+          </div>
+        
+
+    </header>
+ 
+
+
+    <section class="logic">
+        <div class="body">
+            <div id="inner" class="inner"> Year:</div>
+<input type="text" id="yy" class="abc" maxlength="4" placeholder="YYYY">
+<div id="inner" class="inner">Month:</div>
+<input type="text" id="mm" class="abc" maxlength="2" placeholder="MM">
+<div id="inner" class="inner">Day:</div>
+<input type="text" id="dd" class="abc" maxlength="2" placeholder="DD">
+
+    <div id="inner" class="inner">Hour:</div>
+<input type="text" id="hh" class="abc" maxlength="2" placeholder="HH">
+<div id="inner" class="inner">Minute:</div>
+<input type="text" id="mi" class="abc" maxlength="2" placeholder="MM">
+<div id="inner" class="inner">Second:</div>
+<input type="text" id="ss" class="abc" maxlength="2" placeholder="SS">
+
+<input type="button" id="button" value="Convert" class="button">
+<!-- <input type="button" id="decode-64" value="Decode-64" >  -->
+    <input type="text" id="output" class="op" placeholder="See the output here">
+</div>
+</section>
+    <footer class="footer">
+        <!-- <div class="footer-div-1"> -->
+        <h6 class="footer-para">Utility Tools: Encoders and Decoders.</h6>
+       
+      </footer>
+
+</body>
+</html>
